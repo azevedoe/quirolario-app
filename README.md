@@ -22,7 +22,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Na primeira execução o MediaPipe baixa `hand_landmarker.task` automaticamente.
+O arquivo `hand_landmarker.task` (pesos do detector de mão) já vai no repositório. Se ele não estiver na raiz, a primeira execução baixa do MediaPipe.
 
 ## Deploy (Streamlit Cloud)
 
@@ -31,7 +31,7 @@ Na primeira execução o MediaPipe baixa `hand_landmarker.task` automaticamente.
 3. **Main file path:** `app.py`
 4. Python 3.12 se disponível.
 
-O `packages.txt` instala libs de sistema usadas pelo OpenCV (via `opencv-contrib-python`, dependência do MediaPipe).
+O `packages.txt` instala as libs de sistema do OpenCV e do MediaPipe no Linux do Cloud (`libgl1`, `libegl1`, `libgles2`). Sem `libegl1`, o carregamento do modelo falha com `libEGL.so.1: cannot open shared object file`.
 
 > O stack inclui `torch` e MediaPipe — no free tier o build pode demorar ou estourar memória. Se falhar no Cloud, use a demo local.
 
