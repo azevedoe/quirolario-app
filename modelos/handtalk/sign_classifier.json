@@ -1,0 +1,29 @@
+{
+  "classes": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "I",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "Y"
+  ],
+  "feature_vector_size": 68,
+  "accuracy_holdout": 0.9882491186839013,
+  "n_train": 3403,
+  "n_test": 851
+}

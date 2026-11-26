@@ -1,0 +1,10 @@
+# Versões alinhadas aos modelos em modelos/ (joblib/pickle).
+# Python 3.12+ — herda pins de libras_datilologia.
+# cv2 vem via opencv-contrib-python (dependência do mediapipe).
+mediapipe==1.2.0
+numpy==2.5.4
+scikit-learn==1.9.1
+joblib==1.6.0
+torch==2.15.0
+pillow==13.0.0
+streamlit>=1.40.0
